@@ -84,7 +84,8 @@ export function convertStyle(style = {}, buttons) {
     },
     bottomTabs: {
       visible: style.tabBarHidden ? !style.tabBarHidden : undefined,
-      drawBehind: style.drawUnderTabBar
+      drawBehind: style.drawUnderTabBar,
+      currentTabIndex: style.initialTabIndex
     }
   };
   deleteUndefinedProperies(convertedStyle);
